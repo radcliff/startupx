@@ -3,14 +3,17 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.1.8'
 
+# lightweight rails for API only apps
 gem 'rails-api'
 
 gem 'spring', :group => :development
 
-
 gem 'pg'
+# extend active record to handle spatial data
+gem 'activerecord-postgis-adapter'
 
-
+# geospatial data library for ruby
+gem 'rgeo'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
