@@ -15,6 +15,9 @@ gem 'activerecord-postgis-adapter'
 # geospatial data library for ruby
 gem 'rgeo'
 
+# cron jobs
+gem 'whenever', :require => false
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
