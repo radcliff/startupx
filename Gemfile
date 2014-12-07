@@ -21,6 +21,9 @@ gem 'whenever', :require => false
 # create json structures
 gem 'jbuilder', '~> 2.2.5'
 
+gem 'kaminari'
+gem 'api-pagination'
+
 # Use unicorn as the app server
 # gem 'unicorn'
 

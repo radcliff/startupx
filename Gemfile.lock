@@ -30,6 +30,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
+    api-pagination (3.1.0)
     arel (5.0.1.20140414130214)
     builder (3.2.2)
     chronic (0.10.2)
@@ -41,6 +42,9 @@ GEM
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
     json (1.8.1)
+    kaminari (0.16.1)
+      actionpack (>= 3.0.0)
+      activesupport (>= 3.0.0)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
     method_source (0.8.2)
@@ -104,7 +108,9 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord-postgis-adapter
+  api-pagination
   jbuilder (~> 2.2.5)
+  kaminari
   pg
   pry
   pry-rails

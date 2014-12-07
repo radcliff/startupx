@@ -12,7 +12,9 @@ class Api::TrafficController < ApplicationController
       # create rgeo geometry object
       center_point = @factory.point(coordinates[1], coordinates[0])
 
-      @whereabouts = Whereabout.find_by_sql(["SELECT * FROM whereabouts WHERE ST_DWithin(latlon, ?, ?);", center_point, radius])
+      @whereabouts = paginate Whereabout.
+        find_by_sql(["SELECT * FROM whereabouts WHERE ST_DWithin(latlon, ?, ?);", center_point, radius]), 
+        per_page: 1
     else
       render plain: "invalid request"
     end
