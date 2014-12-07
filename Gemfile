@@ -18,9 +18,6 @@ gem 'rgeo'
 # cron jobs
 gem 'whenever', :require => false
 
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.1.2'
-
 # create json structures
 gem 'jbuilder', '~> 2.2.5'
 
