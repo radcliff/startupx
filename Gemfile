@@ -21,11 +21,14 @@ gem 'whenever', :require => false
 # create json structures
 gem 'jbuilder', '~> 2.2.5'
 
+# pagination
 gem 'kaminari'
 gem 'api-pagination'
 
-# Use unicorn as the app server
-# gem 'unicorn'
+# web server
+gem 'thin'
+
+gem 'faye-rails'
 
 # Deploy with Capistrano
 # gem 'capistrano', :group => :development
@@ -33,3 +36,5 @@ gem 'api-pagination'
 # REPL for ruby
 gem 'pry'
 gem 'pry-rails'
+
+gem 'seed_dump', :group => :development
