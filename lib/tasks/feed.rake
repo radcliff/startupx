@@ -15,7 +15,7 @@ namespace :feed do
       location_history = about.location_history
 
       # find user in db by uid (table indexed on column)
-      user = User.find_by(uid: user_id)
+      user = User.find_or_create_by(uid: user_id)
 
       # perform all inserts in single transaction
       ActiveRecord::Base.transaction do
